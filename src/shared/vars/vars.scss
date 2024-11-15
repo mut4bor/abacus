@@ -1,0 +1,36 @@
+$pageWidth320: 320px;
+$pageWidth425: 425px;
+$pageWidth600: 600px;
+$pageWidth768: 768px;
+$pageWidth1024: 1024px;
+$pageWidth1440: 1440px;
+
+$scrollBarWidth: 0.8rem;
+$scrollBarHeight: 0.5rem;
+$scrollBarBgColor: #d0d0d0;
+$scrollBarHoverBgColor: #9a9a9a;
+
+$headerHeightMobile: 5rem;
+$headerHeight: 7.2rem;
+
+$containerWidth: 144rem;
+
+$backgroundColor: #f5f5f5;
+$white: #ffffff;
+$black: #000000;
+
+@function setColorAlpha($color: #ffffff, $alpha: 1) {
+  @return rgba($color, $alpha);
+}
+
+@mixin visuallyHidden {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}

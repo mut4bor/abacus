@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 0.5rem 3fr;
+  flex-direction: column;
+  border-top: solid 1rem;
+  border-bottom: solid 1rem;
+  height: fit-content;
+  min-height: 30rem;
+
+  &.gray {
+    border-color: gray;
+  }
+
+  &.red {
+    border-color: red;
+  }
+}
+
+.centerPipe {
+  width: 100%;
+  min-height: 0.5rem;
+
+  &.gray {
+    background: gray;
+  }
+
+  &.red {
+    background: red;
+  }
+}
+
+.topPipes,
+.bottomPipes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 100%;
+}

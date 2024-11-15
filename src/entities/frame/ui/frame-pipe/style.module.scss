@@ -1,0 +1,17 @@
+.pipe {
+  display: flex;
+  width: 0.5rem;
+  min-height: 0.5rem;
+
+  &.isLong {
+    height: 100%;
+  }
+
+  &.gray {
+    background: gray;
+  }
+
+  &.red {
+    background: red;
+  }
+}
