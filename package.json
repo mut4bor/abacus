@@ -4,8 +4,7 @@
   "description": "Client for ukids",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix",
     "dev": "vite",
