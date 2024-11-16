@@ -21,8 +21,10 @@ export const ParametersFormPipeSkinPickSelect = ({
         onChange={(event) => onChange(event.target.value as pipeSkinType)}
         className={style.input}
       >
-        {Object.entries(stoneMap).map(([key, value]) => (
-          <option value={key}>{value}</option>
+        {Object.entries(stoneMap).map(([key, value], index) => (
+          <option value={key} key={index}>
+            {value}
+          </option>
         ))}
       </select>
     </label>
